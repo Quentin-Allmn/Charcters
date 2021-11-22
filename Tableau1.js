@@ -2,7 +2,7 @@ class Tableau1 extends Phaser.Scene{
 
     preload(){
         for (let t=1;t<=10;t++) {
-            this.load.image('layer' + t, 'assets/boy/boy_style_1/PNG/Layer-' + t + '.png');
+            this.load.image('layer' + t, 'assets/boy/boy_style_1/PNG/idle/Layer-' + t + '.png');
         }
     }
     create(){
@@ -10,10 +10,11 @@ class Tableau1 extends Phaser.Scene{
          * AnimationIdle1
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.idleAnimation = this.add.sprite(100, 100, 'idleAnimation').setOrigin(0,0);
+        this.idle = this.add.sprite(0, 0, 'animation').setOrigin(0,0);
         //animation de idle1
+
         this.anims.create({
-            key: 'idle1',
+            key: 'animation',
             frames: [
                 {key:'layer1'},
                 {key:'layer2'},
@@ -26,10 +27,10 @@ class Tableau1 extends Phaser.Scene{
                 {key:'layer9'},
                 {key:'layer10'},
             ],
-            frameRate: 16,
+            frameRate: 12,
             repeat: -1
         });
-        this.idleAnimation.play('idle1');
+        this.idleAnimation.play('animation');
 
     }
 }
