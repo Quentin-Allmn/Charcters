@@ -30,7 +30,7 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 12,
             repeat: -1
         });
-        this.idleAnimation.play('animation');
+        this.idle.play('animation');
 
     }
 }
