@@ -6,6 +6,10 @@ class Tableau1 extends Phaser.Scene{
         }
     }
     create(){
+        /**
+         * AnimationIdle1
+         * @type {Phaser.GameObjects.Sprite}
+         */
         this.idleAnimation = this.add.sprite(100, 100, 'idleAnimation').setOrigin(0,0);
         //animation de idle1
         this.anims.create({
