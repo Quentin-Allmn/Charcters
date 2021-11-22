@@ -5,7 +5,6 @@ class Tableau1 extends Phaser.Scene{
             this.load.image('layer' + t, 'assets/boy/boy_style_1/PNG/idle/Layer-' + t + '.png');
         }
     }
-
     create(){
         /**
          * AnimationIdle1
